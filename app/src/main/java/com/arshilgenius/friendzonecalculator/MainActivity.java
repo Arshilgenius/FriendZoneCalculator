@@ -5,8 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+
 public class MainActivity extends AppCompatActivity {
     int friendZone = 0;
+    String No = "Bro you are saved ";
+    String Yup = "Bro You have been FriendZoned";
+    String tryAgain = "Let's Try Again";
+    String doing = "Keep Going";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,29 +19,43 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public int increment(View view) {
+    public void increment(View v) {
         friendZone = friendZone + 1;
-        return friendZone;
+        displaydone();
+
     }
 
-    public int decrement(View view) {
+    public void decrement(View v) {
         friendZone = friendZone - 1;
-        return friendZone;
+        displayDone();
     }
 
-    public void onSubmit() {
-        if (friendZone > 3)
-            displayYup();
-        else displayNo();
+    public void submit(View v) {
+        if(friendZone>3)
+        displayYup();
+        else
+        displayNo();
     }
+public void reset(View v){
+    friendZone=0;
+    displayDone();
 
+    public void displayDone() {
+        TextView textview = (TextView) findViewById(R.id.done);
+        textview.setText(String.valueOf(doing));
+    }
+}
     public void displayYup() {
         TextView textview = (TextView) findViewById(R.id.result);
-        textview.setText("SHITTTTT !!!! Friendzoned Ho Gaye Aap LOL");
+        textview.setText(String.valueOf(Yup));
     }
 
+    public void displayreset() {
+        TextView textview = (TextView) findViewById(R.id.result);
+        textview.setText(String.valueOf(tryAgain));
+    }
     public void displayNo() {
         TextView textview = (TextView) findViewById(R.id.result);
-        textview.setText("Bach Gayee Aap Friendzone nhi hue ");
+        textview.setText(String.valueOf(No));
     }
 }
