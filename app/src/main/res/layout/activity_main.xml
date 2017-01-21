@@ -28,5 +28,26 @@
         android:textColor="@android:color/black"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="1.Do you talk to that girl everyday?"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2.Do you Recharge her balance often?"
+        android:textColor="@android:color/black"
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2.Has the Girl every called you Bhaiya?"
+        android:textColor="@android:color/black"
+
 
 </LinearLayout>
