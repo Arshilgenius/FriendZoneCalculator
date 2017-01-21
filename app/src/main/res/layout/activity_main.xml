@@ -152,12 +152,13 @@
                 android:onClick="submit"
                 android:text="Submit"
                 android:textColor="@android:color/white" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Reset"
                 android:onClick="reset"
+                android:text="Reset"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
@@ -169,7 +170,8 @@
             android:layout_marginTop="20dp"
             android:text="Let's See Your Fate Here "
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="italic" />
     </LinearLayout>
 </LinearLayout>
 

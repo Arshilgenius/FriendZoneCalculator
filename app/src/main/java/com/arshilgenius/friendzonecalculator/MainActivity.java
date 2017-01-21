@@ -8,10 +8,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     int friendZone = 0;
-    String No = "Bach Gaye Aap :) ";
+    String No = "Bach Gaye Aap :)  ";
     String Yup = "FriendZoned Hogye Aap LOL";
-    String tryAgain = "Let's Try Again";
-    String doing = "Keep Going";
+    String tryAgain = "Best of Luck Arshil ki taraf se";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,16 +28,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submit(View v) {
-        if(friendZone>3)
-        displayYup();
+        if (friendZone > 3)
+            displayYup();
         else
-        displayNo();
+            displayNo();
     }
-public void reset(View v){
-    friendZone=0;
-displayreset();
 
-}
+    public void reset(View v) {
+        friendZone = 0;
+        displayreset();
+
+    }
+
     public void displayYup() {
         TextView textview = (TextView) findViewById(R.id.result);
         textview.setText(String.valueOf(Yup));
@@ -48,6 +49,7 @@ displayreset();
         TextView textview = (TextView) findViewById(R.id.result);
         textview.setText(String.valueOf(tryAgain));
     }
+
     public void displayNo() {
         TextView textview = (TextView) findViewById(R.id.result);
         textview.setText(String.valueOf(No));
