@@ -8,8 +8,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     int friendZone = 0;
-    String No = "Bro you are saved ";
-    String Yup = "Bro You have been FriendZoned";
+    String No = "Bach Gaye Aap :) ";
+    String Yup = "FriendZoned Hogye Aap LOL";
     String tryAgain = "Let's Try Again";
     String doing = "Keep Going";
 
@@ -21,13 +21,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment(View v) {
         friendZone = friendZone + 1;
-        displaydone();
 
     }
 
     public void decrement(View v) {
         friendZone = friendZone - 1;
-        displayDone();
     }
 
     public void submit(View v) {
@@ -38,12 +36,8 @@ public class MainActivity extends AppCompatActivity {
     }
 public void reset(View v){
     friendZone=0;
-    displayDone();
+displayreset();
 
-    public void displayDone() {
-        TextView textview = (TextView) findViewById(R.id.done);
-        textview.setText(String.valueOf(doing));
-    }
 }
     public void displayYup() {
         TextView textview = (TextView) findViewById(R.id.result);
