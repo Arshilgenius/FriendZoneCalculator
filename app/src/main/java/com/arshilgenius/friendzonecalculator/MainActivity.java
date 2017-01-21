@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         return friendZone;
     }
 
-    public void onSubmit(int friendZone) {
+    public void onSubmit() {
         if (friendZone > 3)
             displayYup();
         else displayNo();
