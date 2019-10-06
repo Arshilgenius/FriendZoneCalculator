@@ -61,7 +61,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="15dp"
             android:text="2.Do you Recharge her balance often?"
             android:textColor="@android:color/black" />
@@ -73,7 +73,7 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:onClick="increment"
                 android:text="Yes"
                 android:textColor="@android:color/white" />
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="decrement"
                 android:text="No"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/red" />
         </LinearLayout>
 
         <TextView
@@ -91,12 +91,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="3.Has the Girl every called you Bhaiya?"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/yellow" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <Button
                 android:layout_width="wrap_content"
@@ -108,7 +108,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="decrement"
+                android:onClick="increment"
                 android:text="No"
                 android:textColor="@android:color/white" />
         </LinearLayout>
@@ -129,7 +129,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="increment"
-                android:text="Yes"
+                android:text="no"
                 android:textColor="@android:color/white" />
 
             <Button
@@ -167,10 +167,10 @@
             android:id="@+id/result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:text="Let's See Your Fate Here "
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
+            android:textColor="@android:color/red"
+            android:textSize="30sp"
             android:textStyle="italic" />
     </LinearLayout>
 </LinearLayout>
